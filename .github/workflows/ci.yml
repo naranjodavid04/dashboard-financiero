@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Lunes 12:00 UTC (7:00 a.m. Colombia): detecta cambios de formato en las APIs
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Pipeline completo con datos reales (APIs + modelos)
+        run: python test_pipeline.py
