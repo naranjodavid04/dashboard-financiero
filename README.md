@@ -51,3 +51,7 @@ Para validar el pipeline sin la UI: `.\.venv\Scripts\python.exe test_pipeline.py
 
 - El servicio SDMX de banrep rechaza user-agents no-navegador (HTTP 500): los fetchers envían un User-Agent de navegador.
 - Uso académico/informativo; no constituye asesoría de inversión.
+
+## Licencia
+
+[MIT](LICENSE)
