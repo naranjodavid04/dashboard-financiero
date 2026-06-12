@@ -1,6 +1,12 @@
 # Dashboard Financiero Colombia
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dashboard-financiero-4-study.streamlit.app/)
+
 Dashboard interactivo en **Streamlit** que descarga series financieras colombianas desde APIs públicas, les aplica modelos estadísticos de riesgo y permite explorar escenarios y proyecciones.
+
+**🚀 Demo en vivo: [dashboard-financiero-4-study.streamlit.app](https://dashboard-financiero-4-study.streamlit.app/)**
+
+![Dashboard Financiero Colombia](docs/screenshot.png)
 
 ## Series y fuentes
 
